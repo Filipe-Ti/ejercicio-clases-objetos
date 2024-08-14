@@ -33,4 +33,7 @@ export default class DetalleOrden {
         this.#cantidad = cantidad;
     }
 
+    calcularMontodetalle(){
+        return this.cantidad * this.#producto.precioUnitario;
+    }
 }

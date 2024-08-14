@@ -32,6 +32,4 @@ export default class Producto {
     set precioUnitario(precioUnitario) {
         this.#precioUnitario = precioUnitario;
     }
-
-
 }

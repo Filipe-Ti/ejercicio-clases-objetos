@@ -43,4 +43,15 @@ export default class OrdenCompra {
         this.#detallesOrden = detallesOrden;
     }
 
+    agregarDetalle(detallesOrden) {
+        this.#detallesOrden.push(detallesOrden);
+    }
+
+    calcularTotalOrden() {
+        let total = 0;
+        this.#detallesOrden.forEach((detalle) => {
+            total += detalle.calcularMontodetalle();
+        });
+        return total;
+    }
 }
